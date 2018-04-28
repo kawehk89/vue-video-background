@@ -66,7 +66,13 @@ export default {
       default: '#1f253800',
       type: String
     }
-  }
+  },
+  computed: {
+    cssProps() { return {
+        '--overlay-color': this.overlayColor,
+      }
+    }
+	}
 }
 </script>
 

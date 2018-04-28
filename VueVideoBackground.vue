@@ -72,7 +72,7 @@ export default {
 
 <style lang="css" scoped>
 :root {
-  --overlayColor: {{ overlayColor }}
+  --overlayColor: {{ overlayColor }};
 }
 
   .background-vid {

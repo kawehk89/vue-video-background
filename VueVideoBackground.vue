@@ -61,12 +61,20 @@ export default {
     secondaryButtonLabel: {
       default: '',
       type: String
+    },
+    overlayColor: {
+      default: '#1f253800',
+      type: String
     }
   }
 }
 </script>
 
 <style lang="css" scoped>
+:root {
+  --overlayColor: {{ overlayColor }}
+}
+
   .background-vid {
       position: absolute;
       top: 50%;
@@ -87,7 +95,7 @@ export default {
   }
   .text-overlay {
     font-weight:100;
-    background: #1f253896;;
+    background: var(--overlayColor);
     color: white;
     padding: 2rem;
     width: 100%;

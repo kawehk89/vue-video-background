@@ -87,7 +87,7 @@ export default {
   }
   .text-overlay {
     font-weight:100;
-    background: #1f2538b0;
+    background: #1f253896;;
     color: white;
     padding: 2rem;
     width: 100%;

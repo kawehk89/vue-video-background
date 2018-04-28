@@ -8,8 +8,8 @@
       <div class="text-container">
         <h1 v-text="textHeadline"></h1>
         <h2 v-text="textSubtitle"></h2>
-        <a :href="mainButtonUrl" class="main-button" v-smooth-scroll="{ duration: 1000, offset: -50}">{{ mainButtonLabel }}</a>
-        <a :href="secondaryButtonUrl" class="secondary-button">{{ secondaryButtonLabel }}</a>
+        <a v-if="mainButtonUrl && mainButtonLabel" :href="mainButtonUrl" class="main-button" v-smooth-scroll="{ duration: 1000, offset: -50}">{{ mainButtonLabel }}</a>
+        <a v-if="secondaryButtonUrl && secondaryButtonLabel" :href="secondaryButtonUrl" class="secondary-button">{{ secondaryButtonLabel }}</a>
       </div>
     </div>
   </div>

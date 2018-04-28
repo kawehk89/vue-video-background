@@ -71,10 +71,6 @@ export default {
 </script>
 
 <style lang="css" scoped>
-:root {
-  --overlayColor: {{ overlayColor }};
-}
-
   .background-vid {
       position: absolute;
       top: 50%;
@@ -95,7 +91,7 @@ export default {
   }
   .text-overlay {
     font-weight:100;
-    background: var(--overlayColor);
+    background: var(--overlay-color);
     color: white;
     padding: 2rem;
     width: 100%;

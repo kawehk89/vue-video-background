@@ -77,16 +77,28 @@ export default {
 </script>
 
 <style lang="css" scoped>
+@media (max-width: 400px) {
+  .background-vid, .text-overlay {
+    height: 700px;
+  }
+}
+
+@media (min-width: 660px) {
+  .background-vid, .text-overlay {
+    height: 400px;
+  }
+}
+
+@media (min-width: 769px) {
+  .background-vid, .text-overlay {
+    height: 800px;
+  }
+}
+
   .background-vid {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      min-height: 100%;
-      width: 100%;
-      height: auto;
-      object-fit: cover;
-      z-index: -100;
-      transform: translateX(-50%) translateY(-50%);
+    width: 100%;
+    object-fit: cover;
+    z-index: -100;
   }
   .text-container {
     text-align: center;
@@ -99,12 +111,8 @@ export default {
     font-weight:100;
     background: var(--overlay-color);
     color: white;
-    padding: 2rem;
     width: 100%;
-    min-height: 100%;
-    height: 100%;
     position: absolute; top: 0; left: 0;
-    float: right;
     font-size: 1.2rem;
   }
   .text-overlay h1 {

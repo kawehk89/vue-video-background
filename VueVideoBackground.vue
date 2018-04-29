@@ -79,13 +79,21 @@ export default {
 <style lang="css" scoped>
 @media (max-width: 400px) {
   .background-vid, .text-overlay {
-    height: 700px;
+    height: 600px;
+  }
+
+  .text-container {
+    top: 45%;
   }
 }
 
 @media (min-width: 660px) {
   .background-vid, .text-overlay {
     height: 400px;
+  }
+
+  .text-container {
+    top: 50%;
   }
 }
 
@@ -103,7 +111,6 @@ export default {
   .text-container {
     text-align: center;
     position: absolute;
-    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
   }

@@ -83,7 +83,7 @@ export default {
   }
 
   .text-container {
-    top: 45%;
+    top: 40%;
   }
 }
 

@@ -101,9 +101,11 @@ export default {
     color: white;
     padding: 2rem;
     width: 100%;
+    min-height: 100%;
+    height: 100%;
+    position: absolute; top: 0; left: 0;
     float: right;
     font-size: 1.2rem;
-    min-height: 800px;
   }
   .text-overlay h1 {
     color: #fff;
